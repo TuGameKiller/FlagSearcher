@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    background: #eecb9a;
+    font-family: Arial;
+    color: #fff;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    display: table;
+  }
+  header {
+    background: #eecb9a;
+    height: 15%;
+  }
+  footer {
+    background:  #eecb9a;
+    clear: both;
+    position: relative;
+    height: 15%;
+  }
+  li {
+    list-style-type: none;
+  }
+  ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    width: auto;
+  }
+  hr {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  a:visited{
+    color: #333333;
+    text-decoration: none
+  }
+  a:link {
+    color: #333333;
+    text-decoration: none
+  }
+  nav {
+    font: bold 2vw "Courier New", Monospace;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    float: right;
+    list-style: none;
+  }
+  img[src=""] {
+    display: none;
+  }
+  img {
+    max-width: 1024px;
+    max-height: 1024px;
+  }
+  .logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font: italic 1vw "Fira Sans", serif;
+    background: no-repeat left/cover url(/static/logo.jpg);
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-shadow: #000 0 0 .2em;
+  }
+  .container {
+    width: 100%;
+    max-width: 1024px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .row {
+    width: 80%;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    max-height: 2024px;
+    padding: 15px;
+    background: #333333;
+    border: 3px solid rgb(0, 0, 0);
+  }
+  .rowhidden {
+    width: 80%;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    max-height: 1024px;
+    padding: 15px;
+  }
+  .blockfull {
+    width: 100%
+  }
+  .block {
+    width: 50%;
+    float: left;
+  }
+  .block13 {
+    width: 33%;
+    float: left;
+  }
+  .fullcentreblock {
+    width: 33%;
+    margin: 0;
+    margin-left: 33%;
+    margin-right: 33%;
+  }
+  .methodtitle {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+  .logo {
+    float: left;
+  }
+  .blockbuttons {
+    margin-left: 10%
+  }
+  .upload{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 200px;
+    height: 200px;
+  }
+  .container:after, .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .auth {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.2px;
+    word-spacing: 2px;
+    color: #3f3f3f;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+  }
+  .scrollbox {
+    height:auto;
+    width:100%;
+    max-height: 900px;
+    border:1px solid #ccc;
+    font:16px/26px Georgia, Garamond, Serif;
+    overflow:auto;
+  }
+  .rowfe {
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+  }
+  .switchbuttons {
+    width: auto;
+    margin: auto;
+  }

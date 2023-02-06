@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="main">
+    <div class="row">
+        <p align="center" class="methodtitle">Binary</p>
+        <hr>
+        <div class="scrollbox">
+            {{Binary}}
+        </div>
+    </div>
+
+    <div class="row">
+        <p align="center" class="methodtitle">Hex</p>
+        <hr>
+        <div class="scrollbox">
+            {{Hex}}
+        </div>
+    </div>
+
+    <div class="row">
+        <p align="center" class="methodtitle">Unicode</p>
+        <hr>
+        <div class="scrollbox">
+            {{Unicode}}
+        </div>
+        <a href="{{Path}}" download> 
+    </div>
+
+</div>
+{% endblock %}

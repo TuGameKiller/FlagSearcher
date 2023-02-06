@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FlagSearcher</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/static/lol.ico">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+              <a class="logo">FlagSearcher</a>
+              <nav><a href="/index">.main</a></nav>
+            </div>
+        </header>
+        {% block body %}{% endblock %}
+        <footer>
+            <div class="container">
+            <p align="right"><a class="auth" href="https://i.pinimg.com/originals/0a/a9/df/0aa9df2d9bafdb61ed4f2d9e916a4486.jpg">made by TuGame</a></p>
+            </div>
+        </footer>
+    </body>
+</html>
+    

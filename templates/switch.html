@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block body %}
+        <div class="main">
+        <script>
+            function Switch(filter) {
+              var path = '../static/images/' + filter + '{{img}}';
+              document.getElementById("img").src = path;
+            }
+        </script>
+        <div class="row">
+          <img src="../static/images/{{img}}" alt="{{img}}" id="img" height = 100% width= 100% padding-bottom = 10px>
+          <div class="rowfe">
+          <hr>
+          <div class="blockfull">
+            <button class="switchbuttons" onclick="Switch('')">Original</button>
+            <button class="switchbuttons" onclick="Switch('N')">Negative</button>
+            <button class="switchbuttons" onclick="Switch('R')">RED</button>
+            <button class="switchbuttons" onclick="Switch('G')">GREEN</button>
+            <button class="switchbuttons" onclick="Switch('B')">BLUE</button>
+            <button class="switchbuttons" onclick="Switch('OE')">ODDEVEN</button>
+          </div>
+          <div class="block13">
+            <button class="switchbuttons" onclick="Switch('R0')">R0</button>
+            <button class="switchbuttons" onclick="Switch('R1')">R1</button>
+            <button class="switchbuttons" onclick="Switch('R2')">R2</button>
+            <button class="switchbuttons" onclick="Switch('R3')">R3</button>
+            <button class="switchbuttons" onclick="Switch('R4')">R4</button>
+            <button class="switchbuttons" onclick="Switch('R5')">R5</button>
+            <button class="switchbuttons" onclick="Switch('R6')">R6</button>
+            <button class="switchbuttons" onclick="Switch('R7')">R7</button>
+          </div><div class="block13">
+            <button class="switchbuttons" onclick="Switch('G0')">G0</button>
+            <button class="switchbuttons" onclick="Switch('G1')">G1</button>
+            <button class="switchbuttons" onclick="Switch('G2')">G2</button>
+            <button class="switchbuttons" onclick="Switch('G3')">G3</button>
+            <button class="switchbuttons" onclick="Switch('G4')">G4</button>
+            <button class="switchbuttons" onclick="Switch('G5')">G5</button>
+            <button class="switchbuttons" onclick="Switch('G6')">G6</button>
+            <button class="switchbuttons" onclick="Switch('G7')">G7</button>
+          </div><div class="block13">
+            <button class="switchbuttons" onclick="Switch('B0')">B0</button>
+            <button class="switchbuttons" onclick="Switch('B1')">B1</button>
+            <button class="switchbuttons" onclick="Switch('B2')">B2</button>
+            <button class="switchbuttons" onclick="Switch('B3')">B3</button>
+            <button class="switchbuttons" onclick="Switch('B4')">B4</button>
+            <button class="switchbuttons" onclick="Switch('B5')">B5</button>
+            <button class="switchbuttons" onclick="Switch('B6')">B6</button>
+            <button class="switchbuttons" onclick="Switch('B7')">B7</button>
+        </div>
+        </div>
+        </div>
+
+        <div class="row">
+              <form method="post">
+                <p align="center" class="methodtitle">Significant Bit Method</p>
+                <hr>
+
+                <div class="block13" align="left">
+                  <ul>
+                  <li><input type="radio" value="RGB" name="color" checked>RGB</li>
+                  <li><input type="radio" value="RBG" name="color">RBG</li>
+                  <li><input type="radio" value="GRB" name="color">GRB</li>
+                  <li><input type="radio" value="GBR" name="color">GBR</li>
+                  <li><input type="radio" value="BRG" name="color">BRG</li>
+                  <li><input type="radio" value="BGR" name="color">BGR</li>
+                  </ul>
+                </div>
+
+                <div class="block13" align="left">
+                  <ul>
+                  <li><input type="radio" value="True" name="row_order" checked>First Rows?</li>
+                  <li><input type="radio" value="False"name="row_order">First Columns?</li>
+                  </ul>
+                
+                  <ul>
+                  <li><input type="radio" value="0" name="startpoint" checked>Left Up</li>
+                  <li><input type="radio" value="1" name="startpoint">Right Up</li>
+                  <li><input type="radio" value="2" name="startpoint">Left Down</li>
+                  <li><input type="radio" value="3" name="startpoint">Right Up</li>
+                  </ul>
+                </div>
+
+                <div class="block13" align="left">
+                  <input type="text" name="bit" value="0"> 
+                  <input type="submit" name="switch">
+                </div>
+              </form>
+        </div>
+        </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="main">
+  <div class="row">
+    <div class="upload">
+      <form method="post" enctype="multipart/form-data">
+        <label>
+          <p>Чтобы начать работу, загрузите изображение. Доступные расширения: png, jpg, jpeg, gif, bmp</p>
+          <input type = "file" name = "file"/>
+          <input type = "submit"/>
+        </label>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
